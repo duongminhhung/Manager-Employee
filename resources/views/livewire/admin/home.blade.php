@@ -135,7 +135,7 @@
             <div class="col-xl-6 col-sm-12 col-12 d-flex">
                 <div class="card card-list flex-fill">
                     <div class="card-header ">
-                        <h4 class="card-title">Total Salary By Unit</h4>
+                        <h4 class="card-title"> </h4>
                     </div>
                     <div class="card-body">
                         <div class="team-list">

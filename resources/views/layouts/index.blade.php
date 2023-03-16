@@ -158,11 +158,11 @@
                                     <span>Dashboard</span></a>
                             </li>
                             <li>
-                                <a href="employee.html"><img src="{{ asset('assets/img/employee.svg') }}"
+                                <a href="{{ route('employee') }}"><img src="{{ asset('assets/img/employee.svg') }}"
                                         alt="sidebar_img"><span> Employees</span></a>
                             </li>
                             <li>
-                                <a href="company.html"><img src="{{ asset('assets/img/company.svg') }}"
+                                <a href="{{ route('department') }}"><img src="{{ asset('assets/img/company.svg') }}"
                                         alt="sidebar_img">
                                     <span> Department</span></a>
                             </li>
