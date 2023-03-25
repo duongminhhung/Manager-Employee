@@ -1,3 +1,7 @@
+@extends('layouts.master')
+@section('title', 'Home')
+@section('content')
+
 <div class="page-wrapper">
     <div class="content container-fluid">
         <div class="page-name 	mb-4">
@@ -10,7 +14,7 @@
                 <div class="breadcrumb-path ">
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="index.html"><img src="{{ asset('assets/img/dash.png') }}" class="mr-3"
+                            <a href="{{ route('index') }}"><img src="{{ asset('assets/img/dash.png') }}" class="mr-3"
                                     alt="breadcrumb" />Home</a>
                         </li>
                         <li class="breadcrumb-item active"> Dashboard</li>
@@ -35,7 +39,7 @@
                     <div class="card-body">
                         <div class="card_widget_header">
                             <label>Employees</label>
-                            <h4>700</h4>
+                            <h4>{{ $count_employee }}</h4>
                         </div>
                         <div class="card_widget_img">
                             <img src="{{ asset('assets/img/dash1.png') }}" alt="card-img" />
@@ -47,8 +51,8 @@
                 <div class="card board1 fill2 ">
                     <div class="card-body">
                         <div class="card_widget_header">
-                            <label>Companies</label>
-                            <h4>30</h4>
+                            <label>Department</label>
+                            <h4>{{ $count_department }}</h4>
                         </div>
                         <div class="card_widget_img">
                             <img src="{{ asset('assets/img/dash2.png') }}" alt="card-img" />
@@ -83,7 +87,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-xl-6 d-flex mobile-h">
                 <div class="card flex-fill">
                     <div class="card-header">
@@ -130,7 +134,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <div class="row">
             <div class="col-xl-6 col-sm-12 col-12 d-flex">
                 <div class="card card-list flex-fill">
@@ -352,3 +356,4 @@
         </div>
     </div>
 </div>
+@endsection()

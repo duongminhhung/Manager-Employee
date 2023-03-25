@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Manager Saff</title>
+    <title> @yield('title')</title>
 
     <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}">
 
@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
-    @livewireStyles
+ 
 </head>
 
 <body>
@@ -162,12 +162,12 @@
                                         alt="sidebar_img"><span> Employees</span></a>
                             </li>
                             <li>
-                                <a href="{{ route('department') }}"><img src="{{ asset('assets/img/company.svg') }}"
+                                <a href="{{ route('index') }}"><img src="{{ asset('assets/img/company.svg') }}"
                                         alt="sidebar_img">
                                     <span> Department</span></a>
                             </li>
                             <li>
-                                <a href="{{ route('calendar') }}"><img src="{{ asset('assets/img/calendar.svg') }}"
+                                <a href="{{ route('index') }}"><img src="{{ asset('assets/img/calendar.svg') }}"
                                         alt="sidebar_img">
                                     <span>Calendar</span></a>
                             </li>
@@ -228,5 +228,5 @@
     <script src="{{ asset('assets/plugins/fullcalendar/jquery.fullcalendar.js') }}"></script>
 
     <script src="{{ asset('assets/js/script.js') }}"></script>
-    @livewireScripts
+    
 </body>
