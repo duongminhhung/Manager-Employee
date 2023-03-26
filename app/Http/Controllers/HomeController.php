@@ -32,40 +32,26 @@ class HomeController extends Controller
     }
     public function add_employee_process(Request $request)
     {
-        // $data = $request->except('_token');
-        // // dd($data);
         
-
-        // $user = new Admin();
-        // // dd($user);
-        // $user->name = $request->get('name');
-        // $user->password = $request->get('password');
-        // // dd($user->password);
-        // $user->email = $request->get('email');
-        // $user->id_dp = $request->get('id_dp');
-        // $user->address = $request->get('address');
-        // $user->job = $request->get('job');
-        // $user->status_job = $request->get('status_job');
         $name = $request->get('name');
         $password = $request->get('password');
         $email = $request->get('email');
         $id_dp = $request->get('department');
         $province = $request->get('province');
-        // dd($id_dp, $province);
-        $namejob = $request->get('namejob');
-        $status_job = $request->get('status_job');
+        $job = $request->get('job');
         DB::table('user')->insert(
             ['name' => $name, 
             'password' => $password, 
             'email' => $email,
             'id_dp' => $id_dp,
-            'address' => $province,
-            'job' => $namejob,
-            'status_job' => $status_job,
+            'status'=> '0',
+            'province' => $province,
+            'job' => $job,
+            // 'status' => 'asdfsadf'
             ]
         );
         
 
-        // return redirect()->route('index');
+        return redirect()->route('add_employee')->with('success', 'Successfully added employees');;
     }
 }

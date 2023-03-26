@@ -36,7 +36,6 @@ class StoreEplRequest extends FormRequest
             ],
             'province' => 'required',
             'job' => 'required',
-            'department' => 'required',
         ];
     }
 }

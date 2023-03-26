@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="{{ asset('assets/plugins/fullcalendar/fullcalendar.min.css') }}">
 
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-
+    @livewireStyles()
  
 </head>
 
@@ -210,6 +210,7 @@
             </div>
         </div>
         @yield('content')
+        
     </div>
     <script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}"></script>
 
@@ -228,5 +229,5 @@
     <script src="{{ asset('assets/plugins/fullcalendar/jquery.fullcalendar.js') }}"></script>
 
     <script src="{{ asset('assets/js/script.js') }}"></script>
-    
+    @livewireScripts()
 </body>

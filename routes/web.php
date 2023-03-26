@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
-
+use App\Http\Livewire\CreateFormEmployee;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,8 +33,4 @@ Route::prefix('admin')->group(function () {
 
     });
 
-
 });
-// Route::get('/', function (){
-//     return view('admin.test');
-// });

@@ -14,6 +14,13 @@
                                 <li class="breadcrumb-item active"> Employees</li>
                             </ul>
                             <h3>Employees</h3>
+                            @if (\Session::has('success'))
+    <div class="alert alert-success">
+        <ul>
+            <li>{!! \Session::get('success') !!}</li>
+        </ul>
+    </div>
+@endif
                         </div>
                     </div>
                     <div class="col-xl-12 col-sm-12 col-12 mb-4">
